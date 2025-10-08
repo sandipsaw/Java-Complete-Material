@@ -3,7 +3,7 @@
 A variable is a container (storage area) used to hold data.  
 Each variable should be given a unique name (identifier).
 
-
+```
 public class Main {
    public static void main(String[] args) {
       // Variables
@@ -13,7 +13,7 @@ public class Main {
        String friend = neighbour;
    }
 }
-
+```
 ---
 
 # 📋 Data Types

@@ -43,3 +43,24 @@ These are of variable size & are usually declared with a ‘new’ keyword.
 - Make a program that takes the radius of a circle as input, calculates its radius and area and prints it as output to the user.
 - Make a program that prints the table of a number that is input by the user. 
 (HINT - You will have to write 10 lines for this but as we proceed in the course you will be studying about ‘LOOPS’ that will simplify your work A LOT!)
+
+--
+# Boilerplate of java 
+paste this code in java.json file
+```
+{
+  "Java Boilerplate": {
+    "prefix": "jclass",
+    "body": [
+      "import java.util.*;",
+      "public class ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/} {",
+      "    public static void main(String[] args) {",
+      "        Scanner sc = new Scanner(System.in);",
+      "        sc.close();",
+      "    }",
+      "}"
+    ],
+    "description": "Java boilerplate with class name same as file name (first letter capitalized)"
+  }
+}
+```

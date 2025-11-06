@@ -123,3 +123,33 @@ class Student {
         s2.display();
     }
 }
+
+1. Concept Recap: What is this()?
+
+this() is used inside a constructor to call another constructor of the same class.
+It helps to avoid code duplication and reuse initialization logic.
+
+2. 👉 But remember:
+this() must be the first statement inside the constructor.
+Only one constructor can be called using this() inside another constructor.
+
+class Box {
+    int length, breadth, height;
+
+    Box() {
+        System.out.println("Default Box");
+    }
+
+    Box(int side) {
+        this(); // Step 1: calls Default constructor
+        length = breadth = height = side;
+        System.out.println("Cube with side: " + side);
+    }
+
+    Box(int length, int breadth, int height) {
+        this(length); // Step 1: calls One-parameter constructor
+        this.breadth = breadth;
+        this.height = height;
+        System.out.println("Rectangle Box: " + length + " x " + breadth + " x " + height);
+    }
+}

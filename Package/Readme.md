@@ -168,3 +168,5 @@ class B {
     }
 }
 ```
+<img width="1308" height="614" alt="image" src="https://github.com/user-attachments/assets/cbdf294e-a7ef-418f-be39-a0cc7473aaf6" />
+
